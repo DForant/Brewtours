@@ -1,0 +1,70 @@
+.center-text{
+    text-align: center !important;
+}
+
+.margin-bottom-small{
+    margin-bottom: 1.5rem !important;
+}
+
+.margin-bottom-medium{
+    margin-bottom: 4rem !important;
+    
+    @include respond(tab-port){
+        margin-bottom: 3rem !important;
+    }
+}
+
+.margin-bottom-big{
+    margin-bottom: 8rem !important;
+    
+    @include respond(tab-port){
+        margin-bottom: 4rem !important;
+    }
+}
+
+.margin-top-small{
+    margin-top: 1.5rem !important;
+}
+
+.margin-top-medium{
+    margin-top: 4rem !important;
+    
+    @include respond(tab-port){
+        margin-top: 3rem !important;
+    }
+}
+
+.margin-top-big{
+    margin-top: 8rem !important;
+    
+    @include respond(tab-port){
+        margin-top:  4rem !important;
+    }
+}
+
+.margin-top-huge{
+    margin-top: 10rem !important;
+    
+    @include respond(tab-port){
+        margin-top: 6rem !important;
+    }
+}
+
+.margin-right-small{
+    margin-right: 1.5rem !important;
+}
+
+.padding-top-small{
+    padding-top: 1.5rem !important;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+}

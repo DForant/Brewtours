@@ -1,0 +1,42 @@
+.about-section-item{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    background-color: rgba($color-white, 25%);
+    border-radius: .6rem;
+    padding: 6rem;
+    font-size: $default-font-size;
+    position: relative;
+    
+    @include respond(tab-port){
+        width: 100%;
+    }
+            
+    &__image{
+        position: relative;
+        float: left;
+        margin: 2rem;
+
+        &--right{
+            float: right;
+        }        
+
+        img{
+            width: 100%;
+            border-radius: .6rem;
+            box-shadow: 0 3rem 3rem rgba($color-black, .3);
+        }        
+        
+        @include respond(tab-land){
+            float: none;
+            
+            img{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+        }
+
+    }
+}

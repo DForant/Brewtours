@@ -1,0 +1,172 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, 25%);
+    border-radius: 2rem;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+    position: relative;
+    
+    @include respond(tab-port){
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;     
+    }
+    
+    @include respond(phone){
+        transform: skewX(0);
+    }
+    
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        transform: translateX(-3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        
+        @supports (clip-path: polygon(0 0)) 
+        or (-webkit-clip-path: polygon(0 0)){
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            border-radius: none;
+        }
+        
+        @include respond(phone){
+            transform: translateX(-1rem) skewX(0);
+        }
+        
+        @include respond(narrow-phone){
+            float: none;
+            margin: 0 auto;
+        }
+    }
+    
+    &__img{
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+    }
+    
+    &__heading{
+        @include respond(narrow-phone){
+            margin-top: 1rem;
+        }
+    }
+        
+    &__text{
+        transform: skewX(12deg);
+        
+        @include respond(phone){
+            transform: skewX(0)
+        }
+
+        @include respond(narrow-phone){
+            h3{
+                font-size: 1.2rem;
+            }
+            
+        }
+    }
+    
+    &__caption{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: $color-white;
+        font-size: 2.2rem;
+        text-align: center;   
+        opacity: 1;
+        text-shadow: 
+            -1px -1px $color-black,
+            1px -1px $color-black,
+            -1px 1px $color-black,
+            1px 1px $color-black;
+        
+        //Front Page Reviewers
+        &--review-1{
+            top: 50%;
+            left: 20%;
+        }
+        
+        &--review-2{
+            
+        }
+        
+        // Brewmasters
+        &--brewmaster-1{
+            left: 20%;
+        }
+        
+        &--brewmaster-2{
+            left: 5%;
+        }
+        
+        &--brewmaster-3{
+            left: 2%;
+        }
+        
+        //Guides
+        &--guide-1{
+            top: 60%;
+            left: 15%;
+        }
+        
+        &--guide-2{
+            top: 70%;
+            left: 25%;
+        }
+        
+        &--guide-3{
+            top:65%;
+            left: 10%;
+        }
+
+        // Breweries
+        &--brewery-1{
+            top: 40%;
+            left: 15%;
+        }
+        
+        &--brewery-2{
+            top: 30%;
+            left: 5%;
+        }
+
+        &--brewery-3{
+            
+        }
+        
+    }
+    
+        
+    @media only screen and (hover: hover){
+        &__caption{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,20%);
+            opacity: 0;
+            transition: all .5s;
+            
+        }
+
+        &:hover &__caption{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+        
+        img{
+            transition: all .5s;
+        }
+        
+        &:hover &__img{
+            transform: translateX(-4rem) scale(1);
+            filter: blur(3px) brightness(80%);
+        }
+
+    }   
+}

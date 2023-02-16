@@ -1,0 +1,237 @@
+.tour-items{
+    padding: 10rem 0 15rem 0;
+    background-color: $color-grey-light-1;
+    
+    @include respond(tab-port){
+        padding: 15rem 0 5rem 0;
+    } 
+    
+}
+
+.tour-card{
+    position: relative;
+    height: auto;
+    border-radius: 3rem;
+    bckground-color: $color-white;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    
+    &__side{
+        position: relative;
+        height: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0.3rem;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+       
+        &--top{
+            background-color: $color-white;
+        }
+        
+        &--bottom{
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            
+            &--1{
+                background-image: linear-gradient(to right bottom, 
+                    $color-secondary-light, 
+                    $color-secondary-dark );
+            }
+            
+            &--2{
+                background-image: linear-gradient(to right bottom, 
+                    $color-primary-light, 
+                    $color-primary-dark);
+            }
+            
+            &--3{
+                background-image: linear-gradient(to right bottom, 
+                    $color-tertiary-light,
+                    $color-tertiary-dark);
+            }
+        }
+    }
+    
+    // Top styling
+    &__picture{
+        height: 23rem;
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+        background-size: cover;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        @supports (background-blend-mode: screen){
+            background-blend-mode: screen;
+        }
+        
+        &--1{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, 0.8),
+                rgba($color-secondary-dark, 0.8)),
+                url(../img/beer-4.jpg); 
+            
+            @supports (background-blend-mode: screen){
+                background-image: linear-gradient(to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark),
+                    url(../img/beer-4.jpg); 
+            }
+           
+           @media(min-resolution: 192dpi) and (min-width: 37.5em),
+           (min-width: 125em){
+                background-image: linear-gradient(to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark),
+                    url(../img/beer-4-large.jpg); 
+               
+            }
+           
+        }
+        
+        &--2{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)),
+                url(../img/beer-5.jpg);
+            
+            @supports(background-blend-mode: screen){
+            background-image: linear-gradient(to right bottom,
+                $color-primary-light,
+                $color-primary-dark),
+                url(../img/beer-5.jpg);
+            }
+
+           @media(min-resolution: 192dpi) and (min-width: 37.5em),
+           (min-width: 125em){
+                background-image: linear-gradient(to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark),
+                    url(../img/beer-5-large.jpg); 
+               
+            }     
+        }
+        
+        &--3{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, 0.8),
+                rgba($color-tertiary-dark, 0.8)),
+                url(../img/beer-6.jpg);
+            
+            @supports(background-blend-mode: screen){
+                background-image: linear-gradient(to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark),
+                    url(../img/beer-6.jpg);
+            }
+
+           @media(min-resolution: 192dpi) and (min-width: 37.5em),
+           (min-width: 125em){
+                background-image: linear-gradient(to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark),
+                    url(../img/beer-6-large.jpg); 
+               
+            }
+            
+        }       
+    }
+    
+    &__heading{
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;        
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        
+        @include respond(tab-land){
+            font-size: 1.8rem;
+        }
+        
+        @include respond(tab-port){
+            font-size: 2.8rem;
+        }
+        
+        @include respond(narrow-phone){
+            font-size: 1.8rem;
+        }        
+        
+    }
+
+    &__heading-span{
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        
+        &--1{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, .85),
+                rgba($color-secondary-dark, .85));
+        }
+        
+        &--2{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, .85),
+                rgba($color-primary-dark, .85));
+        }
+        
+        &--3{
+            background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, .85),
+                rgba($color-tertiary-dark, .85));
+        }
+    }
+    
+    &__details{
+        padding: 1rem 3rem;
+        ul{
+            width: 80%;
+            margin: 0 auto;
+            list-style: none;
+            
+            li{
+                padding: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2
+                }
+            }
+        }
+    }
+    
+    // Botttom styling
+    &__cta{
+        @include centerHorizontalVertical;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem;
+    } 
+    
+    &__price-box{
+        position: relative;
+        top: 20rem;
+        margin-bottom: 8rem;
+        text-align: center;
+        color: $color-white;
+    }
+    
+    &__price-only{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}
