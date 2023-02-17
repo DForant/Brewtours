@@ -38,17 +38,9 @@
                     </h3>
                     <div class="about-section-item__text">
                         <p>
-                            You're free to download and use this design for your own use, but I would ask that you not only include a shoutout to <a href="http://deanforant.com">Dean Forant</a> but also <a href="https://www.udemy.com/share/101WkwB0sed1hSTH4=/">Jonas Scmedtmann</a> whose concepts and methods taught In his Udemy HTML course were the basis for the final design. 
+                            You're free to download and use this design for your own use, but I would ask that you not only include a shoutout to <a href="http://deanforant.com">Dean Forant</a>.
                         </p>
-                        
-                        <p>
-                           The website download includes all the HTML code, SASS code and both the uncompressed CSS and compressed and minified CSS. I also included the .psd file for the logo so that you can customize it in Photoshop, Gimp or your favorite image editing program.  
-                        </p>
-                        
-                        <div class="placeholder placeholder__btn-box">
-                            <a href="downloads/brewtours_1-0-0.zip" class="btn btn--brown">Download Page Design</a>
-                        </div>
-                        
+                                                
                     </div>
                 </div>
 

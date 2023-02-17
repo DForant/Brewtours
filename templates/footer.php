@@ -25,11 +25,7 @@
                 </div>
                 <div class="col-1-2">
                     <p class="footer__copyright">
-                        Built by <a href="http://deanforant.com" class="footer__link footer__link--small">Dean Forant</a> &copy; 2020.
-                        <br>
-                        Design based off content and techniques taught in Jonas Schmedtmann's Udemy Course 
-                        <a href="https://www.udemy.com/share/101WkwB0sed1hSTH4=/" class="footer__link footer__link--small">Advanced CSS and Sass</a> 
-                        &copy; by Jonas Scmedtmann 
+                        <a href="http://deanforant.com" class="footer__link footer__link--small">DFDesigns</a> &copy; 2023.
                     </p>
                 </div>
             </div>
