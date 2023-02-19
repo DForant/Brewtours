@@ -34,13 +34,21 @@
 
                 <div class="row about-section-item">
                     <h3 class="heading-tertiary center-text margin-bottom-small">
-                        Your free to use this design but give credit where credit is due.
+                        Feel free to use this design but give credit where credit is due.
                     </h3>
                     <div class="about-section-item__text">
                         <p>
-                            You're free to download and use this design for your own use, but I would ask that you not only include a shoutout to <a href="http://deanforant.com">Dean Forant</a>.
+                            You are more than welcome to download and use this design for your own use, but I would only ask that you include a "shout-out" to <a href="http://deanforant.com">Dean Forant</a>.
                         </p>
-                                                
+                        
+                        <p>
+                            I've placed all this code in a github repository. This includes the core files, as well as logo in .xcf format so you can modify it in your graphics editor of choice (Photoshop, Gimp, etc...) 
+                        </p>
+
+                        <div class="placeholder placeholder__btn-box">
+                            <a href="https://github.com/DForant/Brewtours" class="btn btn--brown">Brewtours Code Repo.</a>
+                        </div
+
                     </div>
                 </div>
 
