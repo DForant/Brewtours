@@ -38,18 +38,20 @@
                     </h3>
                     <div class="about-section-item__text">
                         <p>
-                            You are more than welcome to download and use this design for your own use, but I would only ask that you include a "shout-out" to <a href="http://deanforant.com">Dean Forant</a>.
+                            You are more then welcome to download and use this design for your own use, but I would only ask that you include a "shout-out" to <a href="http://deanforant.com">Dean Forant</a>.
                         </p>
-                        
+                    </div>
+                    <div class="about-section-item__text">
                         <p>
-                            I've placed all this code in a github repository. This includes the core files, as well as logo in .xcf format so you can modify it in your graphics editor of choice (Photoshop, Gimp, etc...) 
+                            I've included all the code, and stylesheets as well as the logo in .xcf format. 
                         </p>
 
                         <div class="placeholder placeholder__btn-box">
-                            <a href="https://github.com/DForant/Brewtours" class="btn btn--brown">Brewtours Code Repo.</a>
-                        </div
+                            <a href="https://github.com/DForant/Brewtours" class="btn btn--brown">Brewtours Git Repo</a>
+                        </div> 
 
                     </div>
+
                 </div>
 
                 <div class="row about-section-item">
