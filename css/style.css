@@ -1442,7 +1442,7 @@ ul.breadcrumb li a:hover {
 .footer {
   background-color: #333;
   color: #f7f7f7;
-  padding: 10rem 0;
+  padding: 2rem 0;
   font-size: 1.4rem;
 }
 @media only screen and (max-width: 56.25em) {
@@ -1452,15 +1452,15 @@ ul.breadcrumb li a:hover {
 }
 .footer__logo-box {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__logo-box {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 .footer__logo {
-  width: 40rem;
+  width: 30rem;
   height: auto;
 }
 @media only screen and (max-width: 37.5em) {

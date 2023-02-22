@@ -1,7 +1,7 @@
 .footer{
     background-color: $color-grey-dark-3;
     color: $color-grey-light-1;
-    padding: 10rem 0;
+    padding: 2rem 0;
     font-size: 1.4rem;
     
     @include respond(tab-port){
@@ -10,15 +10,15 @@
     
     &__logo-box{
         text-align: center;
-        margin-bottom: 8rem;
+        margin-bottom: 2rem;
         
         @include respond(tab-port){
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
     }
     
     &__logo{
-        width: 40rem;
+        width: 30rem;
         height: auto;
         
         @include respond(phone){

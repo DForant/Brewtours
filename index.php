@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap" rel="stylesheet">
-        <link href="css/iconfont.css" rel="stylesheet" type="text/css"/>
+        <script src="https://kit.fontawesome.com/35af111d85.js" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -81,7 +81,7 @@
                 <div class="row">
                     <div class="col-1-3">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-cup"></i>
+                            <i class="feature-box__icon fa-solid fa-trophy"></i>
                             <h3 class="heading-tertiary margin-bottom-small">Award winning brewmasters</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, praesentium, delectus ab nisi eaque eius asperiores est ratione repudiandae aspernatur nemo possimus nihil ad minus odit reiciendis aliquid? Et, quisquam!
@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-1-3">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-calendar"></i>
+                            <i class="feature-box__icon fa-solid fa-calendar-days"></i>
                             <h3 class="heading-tertiary margin-bottom-small">Book a tour</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, praesentium, delectus ab nisi eaque eius asperiores est ratione repudiandae aspernatur nemo possimus nihil ad minus odit reiciendis aliquid? Et, quisquam!
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-1-3">
                         <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-home"></i>
+                            <i class="feature-box__icon fa-solid fa-house"></i>
                             <h3 class="heading-tertiary margin-bottom-small">Participating brewerys and pubs</h3>
                             <p class="feature-box__text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, praesentium, delectus ab nisi eaque eius asperiores est ratione repudiandae aspernatur nemo possimus nihil ad minus odit reiciendis aliquid? Et, quisquam!
