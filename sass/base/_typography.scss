@@ -10,6 +10,7 @@ body{
     margin-bottom: 3rem;
     color: #fff;
     text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     
     &--main{
