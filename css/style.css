@@ -106,6 +106,7 @@ body {
   margin-bottom: 3rem;
   color: #fff;
   text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .heading-primary--main {
@@ -242,12 +243,97 @@ body {
   }
 }
 
+.margin-left-small {
+  margin-top: 1.5rem !important;
+}
+
+.margin-left-medium {
+  margin-top: 4rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-left-medium {
+    margin-top: 3rem !important;
+  }
+}
+
+.margin-left-big {
+  margin-top: 8rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-left-big {
+    margin-top: 4rem !important;
+  }
+}
+
+.margin-left-huge {
+  margin-top: 10rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-left-huge {
+    margin-top: 6rem !important;
+  }
+}
+
 .margin-right-small {
   margin-right: 1.5rem !important;
 }
 
+.margin-right-medium {
+  margin-top: 4rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-right-medium {
+    margin-top: 3rem !important;
+  }
+}
+
+.margin-right-big {
+  margin-top: 8rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-right-big {
+    margin-top: 4rem !important;
+  }
+}
+
+.margin-right-huge {
+  margin-top: 10rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-right-huge {
+    margin-top: 6rem !important;
+  }
+}
+
 .padding-top-small {
   padding-top: 1.5rem !important;
+}
+
+.margin-top-medium {
+  margin-top: 4rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-top-medium {
+    margin-top: 3rem !important;
+  }
+}
+
+.margin-top-big {
+  margin-top: 8rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-top-big {
+    margin-top: 4rem !important;
+  }
+}
+
+.margin-top-huge {
+  margin-top: 10rem !important;
+}
+@media only screen and (max-width: 56.25em) {
+  .margin-top-huge {
+    margin-top: 6rem !important;
+  }
 }
 
 .sr-only {
@@ -1244,6 +1330,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header__text-box {
     top: 60%;
+    font-size: 1.4rem;
   }
 }
 
