@@ -1,6 +1,6 @@
 {
     "name": "brewtours",
-    "version": "1.1.13-hf1",
+    "version": "1.1.13",
     "description": "An Example Web Page for a Brewery tour company",
     "main": "index.js",
     "scripts": {
