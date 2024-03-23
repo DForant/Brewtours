@@ -30,7 +30,7 @@
         
         <main>
             <section class="section-about">
-                <div class="center-text margin-bottom-big margin-top-medium margin-left-small margin-right-small">
+                <div class="center-text margin-bottom-big margin-top-huge margin-left-small margin-right-small">
                     <h2 class="heading-secondary">
                         Guided Brewery Tours for the Beer lover in all of us
                     </h2>
