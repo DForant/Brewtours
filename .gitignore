@@ -22,6 +22,7 @@ wp-config.php
 
 # Example themes
 **/wp-content/themes/twenty*/
+**/wp-content/themes/understrap/
 
 # Example plugin
 **/wp-content/plugins/hello.php
@@ -47,9 +48,11 @@ wp-config.php
 # uncomment the next line
 #**/wp-content/themes
 
+
+
 # Add individual themes
 # Eg: To include the twentytwentyfour theme include the path with the leading !
-**/wp-content/themes/deanforant
+!/wp-content/themes/brewtours
 
 **/node_modules/
 *.code-workspace
