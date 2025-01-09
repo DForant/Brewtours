@@ -49,7 +49,7 @@
                         <p class="paragraph">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, repellat, dolorum, eligendi omnis. consectetur adipisicing elit. Ducimus, esse voluptates praesentium incidunt laudantium.
                         </p>
-                        <a href="about.php" class="btn-text">
+                        <a href="about.php" class="btn btn--brown">
                             Learn More &rarr;
                         </a>
                     </div>
@@ -323,7 +323,7 @@
                                 
                                 <div class="form__group">
                                     <button class="btn btn--brown">
-                                        Next Step &rarr;
+                                        Continue &rarr;
                                     </button>
                                 </div>
 
