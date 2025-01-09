@@ -1,0 +1,11 @@
+.placeholder{
+    &__btn-box{
+        display: block;
+        margin-top: 4rem;
+        text-align: center;
+        
+        @include respond(phone){
+            top: 60%;
+        }
+    }
+}

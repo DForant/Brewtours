@@ -1,0 +1,133 @@
+.header{    
+    background-size: cover;
+    position: relative;
+
+    &--home{
+        height: 85vh;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary,.8),
+            rgba($color-primary-light,.8)),
+            url(../img/Craft-Beer.jpg);
+        background-position: bottom center;
+
+        @media(min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em){
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary,.8),
+                rgba($color-primary-light,.8)),
+                url(../img/Craft-Beer-large.jpg);            
+        }
+
+        @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)){
+            height: 95vh;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);            
+        }       
+
+        @include respond(phone){
+            height: 75vh;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+        }
+    }
+
+    &--subpage{
+        height: 45vh;
+        &-about{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary,.8),
+                rgba($color-primary-light,.8)),
+                url(../img/beer-4.jpg);
+            background-position: bottom center;
+
+            @media(min-resolution: 192dpi) and (min-width: 37.5em),
+            (min-width: 125em){
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary,.8),
+                    rgba($color-primary-light,.8)),
+                    url(../img/beer-4-large.jpg);            
+            }
+        }
+        &-profile{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary,.8),
+                rgba($color-primary-light,.8)),
+                url(../img/draft-system.jpg);
+            background-position: center center;
+
+            @media(min-resolution: 192dpi) and (min-width: 37.5em),
+            (min-width: 125em){
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary,.8),
+                    rgba($color-primary-light,.8)),
+                    url(../img/draft-system-large.jpg);            
+            }            
+        }
+        &-tours{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary,.8),
+                rgba($color-primary-light,.8)),
+                url(../img/beer-3.jpg);
+            background-position: center center;
+
+            @media(min-resolution: 192dpi) and (min-width: 37.5em),
+            (min-width: 125em){
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary,.8),
+                    rgba($color-primary-light,.8)),
+                    url(../img/beer-3-large.jpg);            
+            }            
+        }
+        &-placeholder{
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary,.8),
+                rgba($color-primary-light,.8)),
+                url(../img/beer-7.jpg);
+            background-position: center top;
+
+            @media(min-resolution: 192dpi) and (min-width: 37.5em),
+            (min-width: 125em){
+                background-image: linear-gradient(
+                    to right bottom,
+                    rgba($color-primary,.8),
+                    rgba($color-primary-light,.8)),
+                    url(../img/beer-7-large.jpg);            
+            }             
+        }
+    }
+                
+    &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 15rem;
+        
+    }
+
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        @include respond(phone){
+            top: 60%;
+            font-size: 1.4rem;
+        }
+    }
+    
+}
+

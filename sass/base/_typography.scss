@@ -1,0 +1,90 @@
+body{
+    font-family: 'Amiri', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey-dark-1;
+}
+
+.heading-primary{
+    margin-bottom: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+    &--main{
+        display: Block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 1.2rem;
+        animation: moveInLeft 1s ease-out;
+
+        @include respond(phone){
+            font-size: 5rem;
+            letter-spacing: .6rem;
+        }
+        
+        @include respond(narrow-phone){
+            font-size: 3rem;
+            letter-spacing: .8rem;
+        }
+
+    }
+
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+        
+        @include respond(phone){
+            letter-spacing: .5rem;
+        }
+        
+        @include respond(narrow-phone){
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.heading-secondary{
+    display: inline-block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    color: $color-primary;
+    transition: all .2s;
+    
+    @supports (-webkit-background-clip: text){
+        background-image: linear-gradient(to right,
+            $color-primary, 
+            $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    
+    @include respond(tab-port){
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+    
+    @include respond(phone){
+        font-size: 2.5rem;
+    }
+}
+
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}
